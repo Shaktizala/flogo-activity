@@ -18,7 +18,7 @@ func (r *Input) FromMap(values map[string]interface{}) error {
 
 func (r *Input) ToMap() map[string]interface{} {
 	return map[string]interface{}{
-		"anInput": r.AnInput,
+		"message": r.AnInput,
 	}
 }
 

@@ -46,9 +46,9 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 	if err != nil {
 		return true, err
 	}
-	fmt.Println("In Activity ", input)
+	fmt.Println("In Activity ", input.AnInput)
 
-	ctx.Logger().Debugf("Input: %s", input.AnInput)
+	// ctx.Logger().Debugf("Input: %s", input.AnInput)
 
 	return true, nil
 }
