@@ -1,6 +1,8 @@
 package sample
 
 import (
+	"fmt"
+
 	"github.com/project-flogo/core/activity"
 	"github.com/project-flogo/core/data/metadata"
 )
@@ -44,6 +46,7 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 	if err != nil {
 		return true, err
 	}
+	fmt.Println("In Activity ", input)
 
 	ctx.Logger().Debugf("Input: %s", input.AnInput)
 
